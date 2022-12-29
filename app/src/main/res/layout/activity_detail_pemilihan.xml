@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".DetailPemilihanActivity">
+
+    <LinearLayout
+        android:id="@+id/backHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Pemilihan"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/btnDataPemilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pemilih"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/btnHasilPemilihan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Hasil Pemilihan"
+        android:textStyle="bold"
+        android:background="@drawable/bg_primary_navy"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <!--Start Card Gone-->
+    <LinearLayout
+        android:id="@+id/textHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <!--Start Card-->
+        <RelativeLayout
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginTop="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoProfile"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/model_produk"/>
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/photoProfile"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kyle Jenner"
+                    android:layout_marginBottom="4sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Washington DC"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>    <!--End Gone-->
+
+<!--    Start Frame-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_primary_navy">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:text="Pasanagan Urut 1"
+            android:background="@drawable/bg_primary"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_gravity="center"/>
+
+<!--        Start Paslon-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+           android:gravity="center">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_marginRight="5dp">
+
+               <ImageView
+                   android:layout_width="180dp"
+                   android:layout_height="180dp"
+                   android:src="@drawable/kepala_daerah" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Ahmad Riyadi"
+                   android:layout_marginTop="15sp"
+                   android:textColor="@color/white"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center">
+
+               <ImageView
+                   android:layout_width="180dp"
+                   android:layout_height="180dp"
+                   android:src="@drawable/kepala_daerah" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Budi Santoso"
+                   android:layout_marginTop="15sp"
+                   android:textColor="@color/white"/>
+           </LinearLayout>
+
+       </LinearLayout> <!-- End Paslon-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Suara"
+                android:textColor="@color/navy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1288 Suara"
+                android:textColor="@color/navy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout> <!-- End Frame-->
+
+    <!--    Start Frame-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_primary_navy">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:text="Pasanagan Urut 1"
+            android:background="@drawable/bg_primary"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_gravity="center"/>
+
+        <!--        Start Paslon-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/kepala_daerah" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ahmad Riyadi"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/kepala_daerah" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agung Wijayanto"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout> <!-- End Paslon-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@color/orange"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Suara"
+                    android:textColor="@color/navy"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000 Suara"
+                    android:textColor="@color/navy"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dinyatakan Menang"
+                    android:textColor="@color/navy"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout> <!-- End Frame-->
+
+
+</LinearLayout>
