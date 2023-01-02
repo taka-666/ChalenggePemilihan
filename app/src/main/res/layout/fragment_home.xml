@@ -104,4 +104,12 @@
 
     </RelativeLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_primary_navy"
+        android:text="Lihat Hasil Pemilihan"
+        android:textColor="@color/white"/>
+
 </LinearLayout>

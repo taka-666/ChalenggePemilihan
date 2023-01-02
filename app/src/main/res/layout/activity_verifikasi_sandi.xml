@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".VerifikasiSandiActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/key_vektor"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Anda perlu untuk menambahkan pin untuk verifikasi saat proses pemilihan suara"
+        android:textColor="@color/navy"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:nextFocusForward="@id/editText2"
+                android:imeOptions="actionNext"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:background="@drawable/bg_primary_gray"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/bg_primary_gray"/>
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/bg_primary_gray"/>
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/bg_primary_gray"/>
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/bg_primary_gray"/>
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/bg_primary_gray"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_primary_navy"
+        android:text="Tambahkan Pin"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

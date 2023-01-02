@@ -50,7 +50,7 @@
 
   <!--    Edit Profil-->
   <RelativeLayout
-      android:id="@+id/btnEditProfil"
+      android:id="@+id/btnUbahSandi"
       android:layout_width="match_parent"
       android:layout_height="50dp"
       android:orientation="horizontal"
@@ -70,7 +70,7 @@
         android:layout_toRightOf="@+id/icKey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Edit Profil"
+        android:text="Ubah Verifikasi Kata Sandi"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
